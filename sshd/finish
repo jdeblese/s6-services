@@ -1,3 +1,6 @@
 #!/command/execlineb -P
 
+# Do not execute a killall sshd here, as we may still need active
+# ssh sessions, for instance when restarting sshd remotely
+
 rm -f /var/run/sshd.pid
