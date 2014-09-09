@@ -1,0 +1,3 @@
+#!/command/execlineb -P
+
+rm -f /var/run/sshd.pid

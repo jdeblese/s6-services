@@ -1,0 +1,9 @@
+#!/command/execlineb -P
+
+define DIR /var/log/sshd
+
+foreground {
+  mkdir -p ${DIR}
+}
+
+s6-log -t n3 s1048576 ${DIR}
